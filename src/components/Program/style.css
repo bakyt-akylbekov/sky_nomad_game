@@ -1,0 +1,268 @@
+.program{
+    background: url("../../assets/images/Program/bg.png") top left/100% 100% no-repeat;
+    color: #ffffff;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.program__title{
+    font-size: 40px;
+    color: #C4A39B;
+    text-align: right;
+}
+
+.program__block{
+    display: flex;
+    justify-content: flex-end;
+}
+.program__items{
+    position: relative;
+    width: 650px;
+    height: 475px;
+}
+.program__right-item{
+    text-align: right;
+    position: absolute;
+    right: 0;
+}
+.program__right-item-1{
+    top: 55px;
+}
+.program__right-item-2{
+    bottom: -15px;
+}
+.program__left-item{
+    position: absolute;
+    top: 50%;
+    transform: translate(-20%, -30%);
+}
+.program__items-img{
+    position: absolute;
+    right: 98px;
+    top: 60px;
+}
+.program__subtitle{
+    margin-bottom: 15px;
+}
+
+
+/*images*/
+
+.program__student{
+    width: 350px;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 8%;
+}
+
+.program__net{
+    width: 600px;
+    position: absolute;
+    z-index: -2;
+    bottom: -16%;
+    left: -1%;
+}
+.program__ellipse-1{
+    width: 650px;
+    position: absolute;
+    z-index: -1;
+    top: -30%;
+    left: -15%;
+}
+.program__ellipse-2{
+    width: 650px;
+    position: absolute;
+    z-index: -1;
+    bottom: -29%;
+    right: -15%;
+}
+.program__icon-1{
+    position: absolute;
+    left: 2%;
+    bottom: 2%;
+}
+.program__icon-2{
+    position: absolute;
+    top: 9%;
+    left: 30%;
+}
+.program__icon-3{
+    position: absolute;
+    top: 43%;
+    left: 36%;
+}
+.program__icon-4{
+    position: absolute;
+    bottom: 1%;
+    left: 42%;
+}
+.program__icon-5{
+    position: absolute;
+    right: 0;
+    top: 29%;
+}
+.program__left-line{
+    position: absolute;
+    left: 0;
+    top: 10%;
+}
+.program__right-line{
+    position: absolute;
+    right: -13%;
+    top: 17%;
+}
+
+
+
+/*images*/
+
+@media screen and (max-width: 1200px) {
+    .program__student{
+        width: 255px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .program__student{
+        width: 220px;
+    }
+    .program__net{
+        width: 410px;
+        left: -5%;
+    }
+    .program__right-line{
+        top: 23%;
+    }
+    .program__icon-1{
+        width: 50px;
+    }
+    .program__ellipse-1{
+        top: -38%;
+        left: -26%;
+    }
+    .program__ellipse-2{
+        bottom: -40%;
+        right: -27%;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+
+
+    .program__student{
+        width: 200px;
+        left: 0;
+
+    }
+
+    .program__net{
+        width: 390px;
+        left: -16%;
+
+    }
+    .program__items-img{
+        display: none;
+    }
+    .program__text-2{
+        padding-left: 250px;
+    }
+    .program__ellipse-1{
+        top: -45%;
+        left: -50%;
+
+    }
+    .program__ellipse-2{
+        bottom: -55%;
+        right: -45%
+
+    }
+    .program__icon-1{
+        left: 80%;
+    }
+    .program__icon-2{
+        top: 5%;
+        left: 7%;
+    }
+    .program__icon-3{
+
+        top: 43%;
+        left: 36%;
+    }
+    .program__icon-4{
+
+        bottom: 1%;
+        left: 42%;
+    }
+    .program__icon-5{
+        right: 5%;
+        top: 50%;
+        width: 100px;
+    }
+    .program__left-line{
+        top: 46%;
+    }
+    .program__right-line{
+        top: 23%;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .program{
+        padding-top: 70px;
+        align-items: flex-start;
+    }
+    .program__title{
+        font-size: 25px;
+    }
+    .program__icon-1{
+        width: 25px;
+    }
+    .program__icon-3 {
+        top: 30%;
+    }
+    .program__icon-2{
+        width: 40px;
+    }
+    .program__icon-5{
+        width: 40px;
+        top: 46%;
+    }
+    .program__right-line{
+        width: 180px;
+        top: 15%;
+    }
+    .program__left-line{
+        width: 60px;
+        top: 50%;
+    }
+    .program__ellipse-1 {
+        left: -75%;
+    }
+    .program__text{
+        font-size: 12px;
+    }
+    .program__left-item {
+        top: 40%;
+        transform: translate(15%, -30%);
+    }
+    .program__subtitle-2{
+        text-align: center;
+        padding-left: 105px;
+    }
+    .program__right-item-1 {
+        top: 30px;
+    }
+    .program__right-item-2 {
+        bottom: 16%;
+    }
+    .program__ellipse-2 {
+        right: -95%;
+    }
+
+}
+

@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+    scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    font-family: "Segoe UI", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a {
+    text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.app {
+    overflow: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-6 {
+    width: 50%;
+    padding: 0 15px;
+}
+
+.col-4 {
+    width: 33.3%;
+    padding: 0 15px;
+}
+
+.col-3 {
+    width: 25%;
+    padding: 0 15px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+
+}
+
+
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .col-6 {
+        width: 100%;
+    }
+
+    .col-3 {
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 520px;
+    }
+
+    .col-3 {
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 320px;
+    }
+
+    .result__col{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .container {
+        max-width: 318px;
+    }
+
+}
+

@@ -1,0 +1,152 @@
+.address{
+    background: url("../../assets/images/Address/bg.png") top left/100% 100% no-repeat;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+}
+.address__title{
+    font-size: 40px;
+    color: #8AAFCC;
+}
+.address__text{
+    color: #ffffff;
+    margin: 40px 0;
+}
+.address__map{
+    width: 70%;
+}
+.address__images{
+    position: relative;
+}
+.address__chair{
+    width: 100%;
+
+}
+.address__hall{
+    width: 30%;
+    position: absolute;
+    left: 0;
+    transform: translate(-30%, 75%);
+}
+.address__facade{
+    width: 45%;
+    position: absolute;
+    right: 0;
+    transform: translate(45%, 55%);
+}
+
+
+/*images*/
+
+.address__icon-1{
+    position: absolute;
+    bottom: 22%;
+    left: 1%;
+}
+.address__icon-2{
+    position: absolute;
+    top: 26%;
+    left: 48%;
+}
+.address__icon-3{
+    position: absolute;
+    bottom: 10%;
+    left: 43%;
+}
+.address__icon-4{
+    position: absolute;
+    right: 9%;
+    top: 2%;
+}
+.address__line{
+    position: absolute;
+    left: -12%;
+    top: 14%;
+}
+
+
+/*images*/
+
+
+@media screen and (max-width: 1200px) {
+    .address{
+        height: 1100px;
+    }
+    .address__line{
+        top: 8%;
+    }
+    .address__icon-2{
+        top: 20%;
+    }
+    .address__icon-3{
+        bottom: 5%;
+    }
+    .address__facade {
+        right: 14%;
+        transform: translate(45%, 17%);
+    }
+    .address__icon-1{
+        bottom: 7%;
+    }
+    .address__chair{
+        width: 80%;
+    }
+    .address__hall{
+        transform: translate(-11%, 53%);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .address__facade{
+        transform: translate(45%, 45%);
+    }
+.address__hall{
+    transform: translate(-11%, 90%);
+}
+}
+
+@media screen and (max-width: 576px) {
+    .address{
+        padding: 50px 0;
+        align-items: flex-start;
+    }
+    .address__title{
+        font-size: 25px;
+    }
+    .address__text{
+        font-size: 12px;
+    }
+   .address__icon-1, .address__icon-4{
+       width: 40px;
+   }
+    .address__icon-3{
+        width: 30px;
+    }
+    .address__map {
+        width: 100%;
+    }
+    .address__chair {
+        width: 100%;
+    }
+    .address__facade{
+        width: 65%;
+        transform: translate(30%, 58%);
+        z-index: -1;
+    }
+    .address__hall{
+        width: 65%;
+        transform: translate(0%, 125%);
+        z-index: -1;
+    }
+    .address__icon-2{
+        width: 25px;
+    }
+    .address__line {
+        top: 11%;
+        left: -50%;
+    }
+}
