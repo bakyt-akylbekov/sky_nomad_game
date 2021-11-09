@@ -1,0 +1,25 @@
+
+.up-arrow {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    z-index: 100;
+}
+.up-arrow__btn{
+    background: transparent;
+    border: none;
+}
+.up-arrow__img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+    cursor: pointer;
+    transition: .7s;
+ }
+.up-arrow__img:hover{
+    transform: rotateZ(360deg);
+    transition: .7s;
+}
+

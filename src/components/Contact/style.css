@@ -46,14 +46,14 @@
     color: #ffffff;
     border: none;
     outline: none;
-    padding: 0 14px;
+    padding: 20px 14px;
 }
 
 .contact__bottom-line {
     width: 100%;
     position: absolute;
     left: 0;
-    top: 25px;
+    top: 33px;
 }
 
 .contact__btn {
@@ -71,7 +71,6 @@
     border-radius: 8px;
     cursor: pointer;
     position: relative;
-    margin-top: 90px;
     transition: .6s;
 }
 
@@ -96,7 +95,7 @@
     color: red;
     font-size: 12px;
     position: absolute;
-    bottom: 25px;
+    bottom: 35px;
     left: 14px;
 }
 

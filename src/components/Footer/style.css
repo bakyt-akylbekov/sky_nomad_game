@@ -24,9 +24,21 @@
     color: #ffffff;
     margin-bottom: 15px;
     text-align: center;
+    transition: .4s;
 }
+
+.footer__tel:hover {
+    color: #FFC400;
+    transition: .4s;
+}
+
 .footer__email{
     color: #ffffff;
+    transition: .4s;
+}
+.footer__email:hover {
+    color: #FFC400;
+    transition: .4s;
 }
 .footer__icons{
     display: flex;
@@ -34,6 +46,21 @@
 }
 .footer__icon{
     list-style: none;
+}
+.footer__telegram,
+.footer__instagram,
+.footer__facebook,
+.footer__whatsapp,
+.footer__tiktok{
+    transition: .7s;
+}
+.footer__telegram:hover,
+.footer__instagram:hover,
+.footer__facebook:hover,
+.footer__whatsapp:hover,
+.footer__tiktok:hover{
+    transform: rotateZ(360deg);
+    transition: .7s;
 }
 .footer__gradient{
     width: 100%;

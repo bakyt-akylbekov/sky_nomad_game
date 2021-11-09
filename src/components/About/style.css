@@ -29,14 +29,14 @@
     background-repeat: no-repeat;
     position: absolute;
     right: 0;
-    transform: translate(0%, -70%);
+    transform: translate(0%, -40%);
 
 }
 
 .about__block {
-    height: 100vh;
+
     display: flex;
-    align-items: center;
+    padding-top: 165px;
     color: #ffffff;
 }
 
@@ -102,6 +102,27 @@
     margin-bottom: 0;
 }
 
+.about__telegram,
+.about__instagram,
+.about__facebook,
+.about__whatsapp,
+.about__tiktok{
+    transition: .7s;
+}
+.about__telegram:hover,
+.about__instagram:hover,
+.about__facebook:hover,
+.about__whatsapp:hover,
+.about__tiktok:hover{
+    transform: rotateZ(360deg);
+    transition: .7s;
+}
+
+
+
+
+
+
 /*images*/
 .about__joystick {
     width: 700px;
@@ -164,6 +185,16 @@
 /*images*/
 
 
+
+
+@media screen and (max-width: 1900px) {
+    .about__joystick {
+        width: 740px;
+        top: 60%;
+    }
+}
+
+
 @media screen and (max-width: 1200px) {
     .about__joystick {
         width: 525px;
@@ -177,7 +208,8 @@
         right: 5%;
         top: 58%;
     }
-    .about__right-top-circle{
+
+    .about__right-top-circle {
         top: 12px;
     }
 
@@ -203,16 +235,18 @@
 }
 
 @media screen and (max-width: 767px) {
-    .about__block{
+    .about__block {
         height: 750px;
     }
-    .about__joystick{
+
+    .about__joystick {
         width: 250px;
         right: 7%;
         top: 67%;
     }
-    .about__right-bottom-circle{
-        z-index: -1;
+
+    .about__right-bottom-circle {
+        z-index: -2;
     }
 
 
@@ -220,33 +254,40 @@
 
 
 @media screen and (max-width: 576px) {
-    .about::before{
+    .about::before {
         width: 385px;
         height: 385px;
     }
+
     .about::after {
         transform: translate(60%, -30%);
     }
-    .about__images{
+
+    .about__images {
         display: none;
     }
+
     .about__joystick {
         width: 220px;
         right: 26%;
         top: 82%;
     }
-.about__title{
-    font-size: 30px;
-}
-.about__text{
-    font-size: 11px;
-}
-    .about__btn{
+
+    .about__title {
+        font-size: 30px;
+    }
+
+    .about__text {
+        font-size: 11px;
+    }
+
+    .about__btn {
         font-size: 15px;
         width: 170px;
         padding: 14px 0;
     }
-    .about__right-bottom-circle{
+
+    .about__right-bottom-circle {
         right: -20%;
     }
 }

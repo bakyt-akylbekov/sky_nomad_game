@@ -15,17 +15,19 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-3">
                         <div className="footer__item">
-                            <img src={logo} alt="logo" className='footer__logo'/>
+                            <a href="#about">
+                                <img src={logo} alt="logo" className='footer__logo'/>
+                            </a>
                         </div>
                     </div>
                     <div className="col-3">
                         <div className="footer__item">
 
                             <a href="tel:0550 60 20 10" className='footer__tel'>
-                                0550 60 20 10;
+                                0550 60 20 10
                             </a>
                             <a href="tel:0505 60 20 10" className='footer__tel'>
-                                0505 60 20 10;
+                                0505 60 20 10
                             </a>
                             <a href="tel:0777 60 20 10" className='footer__tel'>
                                 0777 60 20 10
@@ -44,27 +46,27 @@ const Footer = () => {
                             <ul className="footer__icons">
                                 <li className="footer__icon">
                                     <a href="https://www.instagram.com/sky.nomad.academy/?hl=ru" className="footer__link" target='_blank' rel="noreferrer">
-                                        <img src={instagram} alt="instagram"/>
+                                        <img src={instagram} alt="instagram" className='footer__instagram'/>
                                     </a>
                                 </li>
                                 <li className="footer__icon">
                                     <a href="https://www.facebook.com/" className="footer__link" target='_blank'  rel="noreferrer">
-                                        <img src={facebook} alt="facebook"/>
+                                        <img src={facebook} alt="facebook" className='footer__facebook'/>
                                     </a>
                                 </li>
                                 <li className="footer__icon">
                                     <a href="https://teleg.one/Skynomadacademy" className="footer__link" target='_blank'  rel="noreferrer">
-                                        <img src={telegram} alt="telegram"/>
+                                        <img src={telegram} alt="telegram" className='footer__telegram'/>
                                     </a>
                                 </li>
                                 <li className="footer__icon">
                                     <a href="https://wa.me/996550602010" className="footer__link" target='_blank'  rel="noreferrer">
-                                        <img src={whatsapp} alt="whatsapp"/>
+                                        <img src={whatsapp} alt="whatsapp" className='footer__whatsapp'/>
                                     </a>
                                 </li>
                                 <li className="footer__icon">
                                     <a href="https://www.tiktok.com/@sky.nomad.academy?lang=en" className="footer__link" target='_blank'  rel="noreferrer">
-                                        <img src={tiktok} alt="tiktok"/>
+                                        <img src={tiktok} alt="tiktok" className='footer__tiktok'/>
                                     </a>
                                 </li>
                             </ul>

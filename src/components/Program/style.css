@@ -120,6 +120,9 @@
 
 /*images*/
 
+
+
+
 @media screen and (max-width: 1200px) {
     .program__student{
         width: 255px;
@@ -219,6 +222,7 @@
     .program__title{
         font-size: 25px;
     }
+
     .program__icon-1{
         width: 25px;
     }

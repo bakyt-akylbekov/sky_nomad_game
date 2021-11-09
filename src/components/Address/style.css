@@ -133,7 +133,7 @@
         width: 100%;
     }
     .address__facade{
-        width: 65%;
+        width: 60%;
         transform: translate(30%, 58%);
         z-index: -1;
     }

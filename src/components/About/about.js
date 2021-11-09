@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import Modal from "../Modal/modal";
+import React from 'react';
+// import Modal from "../Modal/modal";
 import btnTop from "../../assets/images/Contact/btn-top.png";
 import btnBottom from "../../assets/images/Contact/btn-bottom.png";
 import instagram from "../../assets/images/Footer/Icon awesome-instagram.svg";
@@ -20,7 +20,7 @@ import './style.css'
 
 const About = () => {
 
-    const [modalActive, setModalActive] = useState(false);
+    // const [modalActive, setModalActive] = useState(false);
 
     return (
         <section className='about' id='about'>
@@ -35,16 +35,18 @@ const About = () => {
                             научитесь писать на <br/> <span>С#</span>, работать с <span>Unity</span> и воплощать идей в
                             собственных <br/> играх
                         </p>
-                        <button type='submit'
-                                className="about__btn"
-                                onClick={() => setModalActive(true)}
-                        >
-                            Записаться
-                            <img src={btnTop} alt="btn-top" className='about__btn-top'/>
-                            <img src={btnBottom} alt="btn-bottom" className='about__btn-bottom'/>
-                        </button>
-                        <Modal active={modalActive} setActive={setModalActive}>
-                        </Modal>
+                        <a href="#contact">
+                            <button type='submit'
+                                    className="about__btn"
+                                // onClick={() => setModalActive(true)}
+                            >
+                                Записаться
+                                <img src={btnTop} alt="btn-top" className='about__btn-top'/>
+                                <img src={btnBottom} alt="btn-bottom" className='about__btn-bottom'/>
+                            </button>
+                        </a>
+                        {/*<Modal active={modalActive} setActive={setModalActive}>*/}
+                        {/*</Modal>*/}
                     </div>
                 </div>
             </div>
@@ -53,29 +55,29 @@ const About = () => {
                 <li className="about__icon">
                     <a href="https://teleg.one/Skynomadacademy" className="about__link" target='_blank'
                        rel="noreferrer">
-                        <img src={telegram} alt="telegram"/>
+                        <img src={telegram} alt="telegram" className='about__telegram'/>
                     </a>
                 </li>
                 <li className="about__icon">
                     <a href="https://www.instagram.com/sky.nomad.academy/?hl=ru" className="about__link" target='_blank'
                        rel="noreferrer">
-                        <img src={instagram} alt="instagram"/>
+                        <img src={instagram} alt="instagram" className='about__instagram'/>
                     </a>
                 </li>
                 <li className="about__icon">
                     <a href="https://www.facebook.com/" className="about__link" target='_blank' rel="noreferrer">
-                        <img src={facebook} alt="facebook"/>
+                        <img src={facebook} alt="facebook" className='about__facebook'/>
                     </a>
                 </li>
                 <li className="about__icon">
                     <a href="https://wa.me/996550602010" className="about__link" target='_blank' rel="noreferrer">
-                        <img src={whatsapp} alt="whatsapp"/>
+                        <img src={whatsapp} alt="whatsapp" className='about__whatsapp'/>
                     </a>
                 </li>
                 <li className="about__icon">
                     <a href="https://www.tiktok.com/@sky.nomad.academy?lang=en" className="about__link" target='_blank'
                        rel="noreferrer">
-                        <img src={tiktok} alt="tiktok"/>
+                        <img src={tiktok} alt="tiktok" className='about__tiktok'/>
                     </a>
                 </li>
             </ul>
