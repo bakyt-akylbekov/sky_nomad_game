@@ -20,7 +20,7 @@ import './style.css'
 
 const About = () => {
 
-    const [modalActive, setModalActive] = useState(true);
+    const [modalActive, setModalActive] = useState(false);
 
     return (
         <section className='about' id='about'>

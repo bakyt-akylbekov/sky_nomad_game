@@ -1,9 +1,7 @@
 import React from 'react';
 
 import './style.css'
-import bottomLine from "../../assets/images/Contact/bottom-line.png";
-import btnTop from "../../assets/images/Contact/btn-top.png";
-import btnBottom from "../../assets/images/Contact/btn-bottom.png";
+
 
 const Modal = ({active, setActive}) => {
     return (
