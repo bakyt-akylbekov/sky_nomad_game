@@ -37,11 +37,11 @@ const Reason = () => {
             {
                 breakpoint: 576,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                 },
             },
         ]
-        // centerMode: true,
+
     };
 
     return (

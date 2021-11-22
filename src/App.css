@@ -665,6 +665,13 @@ a {
     }
 
 
+
+    .result__text {
+        padding-left: 0;
+    }
+    .result__item {
+        margin-bottom: 10px;
+    }
     .result__title {
         color: #ffffff;
     }
@@ -986,7 +993,11 @@ a {
     }
 
     .result__item {
-        margin-bottom: 26px;
+        margin-bottom: 8px;
+    }
+    .result__text {
+        padding-left: 0;
+        margin-bottom: 40px;
     }
 
     .result__ellipse-2,
@@ -1441,6 +1452,9 @@ a {
         font-size: 25px;
         padding-right: 63%;
     }
+    .reason__subtitle{
+        font-size: 16px;
+    }
     .reason__text {
         left: 0;
     }
@@ -1455,6 +1469,9 @@ a {
     }
     .program__title{
         font-size: 25px;
+    }
+    .program__item{
+        outline: none;
     }
 
 
