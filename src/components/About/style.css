@@ -1,5 +1,5 @@
 .about {
-    height: 850px;
+    height: 1078px;
     background: url("../../assets/images/About/MainBack.png") top left/100% 100% no-repeat;
     position: relative;
     z-index: 1;
@@ -8,50 +8,52 @@
 .about::before {
     content: '';
     z-index: -1;
-    width: 600px;
-    height: 600px;
+    width: 879px;
+    height: 879px;
     background-image: url("../../assets/images/About/Эллипс 5.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
-    transform: translate(-31%, -17%);
+    transform: translate(-22%, -19%);
 }
 
 .about::after {
     content: '';
     z-index: -2;
-    width: 600px;
-    height: 600px;
+    width: 849px;
+    height: 849px;
     background-image: url("../../assets/images/About/Эллипс 4.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
-    right: 0;
-    transform: translate(0%, -40%);
-
+    right: -2%;
+    bottom: -16%;
 }
 
 .about__block {
-
     display: flex;
-    padding-top: 165px;
+    height: 1078px;
     color: #ffffff;
+    padding-top: 260px;
+    padding-bottom: 160px;
 }
 
 .about__title {
-    font-size: 45px;
-    letter-spacing: 1.8px;
-    margin-bottom: 15px;
+    font-size: 63px;
+    margin-bottom: 20px;
 }
-
+.about__text{
+    font-size: 20px;
+    padding-right: 62%;
+}
 .about__title span, .about__text span:nth-child(odd), .about__text span:nth-child(even) {
     color: #FFC400;
 }
 
 .about__btn {
-    width: 245px;
+    width: 250px;
     text-align: center;
     padding: 20px 0;
     background: rgb(253, 182, 14);
@@ -59,18 +61,17 @@
     color: #ffffff;
     font-size: 20px;
     font-weight: bold;
-    text-shadow: 1px 2px 3px black;
-    letter-spacing: 2px;
+    text-shadow: 0 2px 0 #00000091;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     position: relative;
-    margin-top: 60px;
+    margin-top: 40px;
     transition: .6s;
 }
 
 .about__btn:hover {
-    box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 2px 5px 16px 0 #fdb60f85, 5px 5px 15px 5px rgba(0, 0, 0, 0);
     transition: .6s;
 }
 
@@ -125,51 +126,71 @@
 
 /*images*/
 .about__joystick {
-    width: 700px;
     position: absolute;
     right: 0;
     top: 50%;
-    transform: translate(-10%, -50%);
+    transform: translate(-14%, -32%);
     z-index: -1;
 }
 
 .about__images {
+    display: flex;
     position: absolute;
     bottom: -3px;
     left: -55px;
-    z-index: -1;
+    z-index: 0;
 }
-
+.about__gallery-block{
+    width: 241px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+.about__gallery-block-link:hover{
+    z-index: 85;
+    cursor: pointer;
+}
+.about__gallery-title{
+    display: block;
+    color: #ffffff;
+}
+.about__gallery-title span{
+    color: #FFC400;
+}
 .about__img-1 {
-    width: 270px;
+
 }
 
 .about__img-2 {
-    width: 220px;
+    height: 204px;
+    position: relative;
+    top: 63px;
 }
 
 .about__img-3 {
-    width: 210px;
+    height: 248px;
+    position: relative;
+    top: 20px;
 }
 
 .about__left-circle {
-    width: 50px;
+
     position: absolute;
-    left: 20px;
+    left: 3%;
     top: 0;
     z-index: -1;
 }
 
 .about__right-top-circle {
-    width: 90px;
     position: absolute;
-    right: -20px;
-    top: 40px;
-
+    right: 0;
+    top: 30px;
+    z-index: -1;
 }
 
 .about__right-bottom-circle {
-    width: 175px;
     position: absolute;
     right: 0;
     bottom: 50px;
@@ -178,21 +199,22 @@
 .about__yellow-line {
     position: absolute;
     bottom: 0;
-    width: 100%;
+
 }
 
 
 /*images*/
 
-
-
-
-@media screen and (max-width: 1900px) {
-    .about__joystick {
-        width: 740px;
-        top: 60%;
+@media screen and (max-width: 1920px) {
+    .about::before{
+        transform: translate(-22%, -19%);
+    }
+    .about::after{
+        right: -2%;
+        bottom: -16%;
     }
 }
+
 
 
 @media screen and (max-width: 1200px) {
@@ -201,94 +223,9 @@
     }
 }
 
-@media screen and (max-width: 992px) {
-    .about__joystick {
-        width: 335px;
-        position: absolute;
-        right: 5%;
-        top: 58%;
-    }
-
-    .about__right-top-circle {
-        top: 12px;
-    }
-
-    .about__img-1 {
-        width: 230px;
-    }
-
-    .about__img-2 {
-        width: 180px;
-    }
-
-    .about__img-3 {
-        width: 170px;
-    }
-
-    .about::before {
-        transform: translate(-35%, -50%);
-    }
-
-    .about::after {
-        transform: translate(36%, -45%);
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .about__block {
-        height: 750px;
-    }
-
-    .about__joystick {
-        width: 250px;
-        right: 7%;
-        top: 67%;
-    }
-
-    .about__right-bottom-circle {
-        z-index: -2;
-    }
-
-
-}
 
 
 @media screen and (max-width: 576px) {
-    .about::before {
-        width: 385px;
-        height: 385px;
-    }
 
-    .about::after {
-        transform: translate(60%, -30%);
-    }
-
-    .about__images {
-        display: none;
-    }
-
-    .about__joystick {
-        width: 220px;
-        right: 26%;
-        top: 82%;
-    }
-
-    .about__title {
-        font-size: 30px;
-    }
-
-    .about__text {
-        font-size: 11px;
-    }
-
-    .about__btn {
-        font-size: 15px;
-        width: 170px;
-        padding: 14px 0;
-    }
-
-    .about__right-bottom-circle {
-        right: -20%;
-    }
 }
 

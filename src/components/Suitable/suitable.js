@@ -29,13 +29,13 @@ const Suitable = () => {
                     </div>
                     <div className='col-6'>
                         <div className='suitable__item'>
-                           <div className="suitable__box">
+                           <div className="suitable__box suitable__content">
                                <h2 className="suitable__title">
                                    Кому подойдёт курс
                                </h2>
                                <div className='suitable__block'>
                                    <p className="suitable__text">
-                                       Ребятам, которые хотят научиться <br/>программировать
+                                       Ребятам, которые хотят научиться программировать
                                    </p>
                                    <img src={checkMark} alt="" className="suitable__icon"/>
                                </div>

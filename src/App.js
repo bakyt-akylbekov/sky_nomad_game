@@ -8,7 +8,6 @@ import Reason from "./components/Reason/reason";
 import Program from "./components/Program/program";
 import Address from "./components/Address/address";
 import Contact from "./components/Contact/contact";
-import Footer from "./components/Footer/footer";
 import UpArrow from "./components/Up-arrow/upArrow";
 
 import './App.css'
@@ -36,7 +35,7 @@ function App() {
                         <Program/>
                         <Address/>
                         <Contact/>
-                        <Footer/>
+
                         <UpArrow showBelow={250}/>
                     </div>
             }

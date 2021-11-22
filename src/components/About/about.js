@@ -1,5 +1,4 @@
 import React from 'react';
-// import Modal from "../Modal/modal";
 import btnTop from "../../assets/images/Contact/btn-top.png";
 import btnBottom from "../../assets/images/Contact/btn-bottom.png";
 import instagram from "../../assets/images/Footer/Icon awesome-instagram.svg";
@@ -14,9 +13,12 @@ import img1 from "../../assets/images/About/img1.png";
 import img2 from "../../assets/images/About/img2.png";
 import img3 from "../../assets/images/About/img3.png";
 import yellowLine from "../../assets/images/About/yellow-line.png";
-
+import btnPlay from "../../assets/images/About/ButtonPlay.png";
+import icon1 from "../../assets/images/Reason/icon1.png";
+import icon2 from "../../assets/images/Program/icon2.png";
 
 import './style.css'
+
 
 const About = () => {
 
@@ -31,9 +33,9 @@ const About = () => {
                             Разработка игр <br/> на <span>Unity</span>
                         </h1>
                         <p className="about__text">
-                            Освойте разработку игр с нуля и получите всё для <br/> уверенного старта в геймдеве. Вы
-                            научитесь писать на <br/> <span>С#</span>, работать с <span>Unity</span> и воплощать идей в
-                            собственных <br/> играх
+                            Освойте разработку игр с нуля и получите всё для
+                            уверенного старта в геймдеве. Вы научитесь писать на <span>С#</span>, работать с <span>Unity</span> и воплощать идеи в собственных
+                            играх.
                         </p>
                         <a href="#contact">
                             <button type='submit'
@@ -85,11 +87,21 @@ const About = () => {
                 <img src={img1} alt="" className="about__img-1"/>
                 <img src={img2} alt="" className="about__img-2"/>
                 <img src={img3} alt="" className="about__img-3"/>
+                <div className="about__gallery-block">
+                    <a href="#about" className='about__gallery-block-link'>
+                        <img src={btnPlay} alt="btnPlay"/>
+                        <span className='about__gallery-title'>
+                            Галерея <br/> <span>SkyNomadAcademy</span>
+                        </span>
+                    </a>
+                </div>
             </div>
-            <img src={leftCircle} className='about__left-circle' alt=""/>
-            <img src={rightCircle} className='about__right-top-circle' alt=""/>
-            <img src={rightCircle} className='about__right-bottom-circle' alt=""/>
-            <img src={yellowLine} className='about__yellow-line' alt=""/>
+            <img src={leftCircle} className='about__left-circle' alt="about__left-circle"/>
+            <img src={rightCircle} className='about__right-top-circle' alt="about__right-top-circle"/>
+            <img src={rightCircle} className='about__right-bottom-circle' alt="about__right-bottom-circle"/>
+            <img src={yellowLine} className='about__yellow-line' alt="about__yellow-line"/>
+            <img src={icon1} className='about__icon-1' alt="about__icon-1"/>
+            <img src={icon2} className='about__icon-2' alt="about__icon-2"/>
         </section>
     );
 };

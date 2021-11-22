@@ -1,13 +1,19 @@
 .contact {
-    padding: 60px 0;
-    background: url("../../assets/images/Address/bg.png") top left/100% 100% no-repeat;
+    height: 1060px;
+    padding: 70px 0;
+    background: url("../../assets/images/Contact/MainBack.png") top left/100% 100% no-repeat;
     position: relative;
     z-index: 1;
     overflow: hidden;
 }
 
+.container__contact{
+    /*margin-top: 85px;*/
+}
+
 .contact__title {
-    font-size: 40px;
+    font-size: 47px;
+    padding: 0 29%;
     color: #dcdcdc;
     text-align: center;
     margin-bottom: 40px;
@@ -20,14 +26,14 @@
 }
 
 .contact__form {
-    width: 468px;
-    height: 685px;
+    width: 445px;
+    height: 662px;
     background: url("../../assets/images/Contact/form.png") top left/100% 100% no-repeat;
-    padding: 65px;
+    padding: 56px 60px;
 }
 
 .contact__subtitle {
-    font-size: 25px;
+    font-size: 27px;
     font-weight: 400;
     letter-spacing: 2px;
     color: #dcdcdc;
@@ -36,7 +42,7 @@
 }
 
 .contact__item {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     position: relative;
 }
 
@@ -48,12 +54,19 @@
     outline: none;
     padding: 20px 14px;
 }
-
+.contact__input::placeholder{
+    font-size: 18px;
+}
+.contact__or{
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 35px;
+}
 .contact__bottom-line {
     width: 100%;
     position: absolute;
     left: 0;
-    top: 33px;
+    top: 40px;
 }
 
 .contact__btn {
@@ -65,17 +78,17 @@
     color: #ffffff;
     font-size: 20px;
     font-weight: bold;
-    text-shadow: 1px 2px 3px black;
-    letter-spacing: 2px;
+    text-shadow: 0 2px 0 #00000091;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     position: relative;
+    margin-top: 50px;
     transition: .6s;
 }
 
 .contact__btn:hover {
-    box-shadow: 2px 5px 16px 0 #0B325E, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 2px 5px 16px 0 #fdb60f85, 5px 5px 15px 5px rgba(0, 0, 0, 0);
     transition: .6s;
 }
 
@@ -91,85 +104,135 @@
     bottom: -30px;
 }
 
-.contact__error{
-    color: red;
-    font-size: 12px;
-    position: absolute;
-    bottom: 35px;
-    left: 14px;
+
+.footer__logo{
+    width: 50%;
 }
+.footer__item{
+    margin-top: 110px;
+}
+.footer__item-2 {
+    text-align: center;
+}
+
+.footer__tel {
+    color: #ffffff;
+    transition: .4s;
+}
+
+.footer__tel:hover {
+    color: #FFC400;
+    transition: .4s;
+}
+
+.footer__email {
+    color: #ffffff;
+    transition: .4s;
+}
+
+.footer__email:hover {
+    color: #FFC400;
+    transition: .4s;
+}
+
+.footer__icons {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 40px;
+}
+
+.footer__icon {
+    list-style: none;
+}
+
+.footer__telegram,
+.footer__instagram,
+.footer__facebook,
+.footer__whatsapp,
+.footer__tiktok {
+    width: 80%;
+    transition: .7s;
+}
+
+.footer__telegram:hover,
+.footer__instagram:hover,
+.footer__facebook:hover,
+.footer__whatsapp:hover,
+.footer__tiktok:hover {
+    transform: rotateZ(360deg);
+    transition: .7s;
+}
+
 
 
 /*images*/
 
 .contact__joystick-1 {
-    width: 400px;
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 10px;
+    bottom: 6%;
 }
 
 .contact__joystick-2 {
-    width: 400px;
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: 10px;
+    bottom: 6%;
 }
 
 .contact__icon-1 {
     position: absolute;
-    left: 15%;
-    top: 16%;
+    left: 22%;
+    top: 19%;
 }
 
 .contact__icon-2 {
     position: absolute;
-    right: 8%;
+    right: 11%;
     top: 19%;
 }
 
 .contact__icon-3 {
     position: absolute;
-    left: 26%;
-    bottom: 3%;
+    left: 32%;
+    bottom: 12%;
 }
 
 .contact__icon-4 {
     position: absolute;
-    right: 27%;
-    bottom: 20%;
+    right: 31%;
+    bottom: 30%;
 }
 
 .contact__icon-5 {
     position: absolute;
     right: 1%;
-    bottom: 3%;
+    bottom: 12%;
 }
 
 .contact__ellipse-1 {
-    width: 600px;
+    z-index: -5;
     position: absolute;
-    left: -16%;
-    top: -15%;
+    left: -9%;
+    top: -19%;
 }
 
 .contact__ellipse-2 {
-    width: 600px;
+    z-index: -5;
     position: absolute;
     right: -19%;
-    top: 32%;
+    top: 20%;
 }
 
 .contact__left-circle {
     position: absolute;
-    right: -17%;
-    top: 8%;
+    right: 0;
+    top: 8.5%;
 }
 
 .contact__right-circle {
     position: absolute;
-    left: -17%;
-    top: 8%;
+    left: 0;
+    top: 8.5%;
 }
 
 .contact__gradient {
@@ -178,6 +241,13 @@
     right: 10%;
 }
 
+.contact__red-circle{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
 
 /*images*/
 
@@ -197,6 +267,13 @@
 
     .contact__joystick-1, .contact__joystick-2 {
         width: 300px;
+    }
+    .footer {
+        font-size: 14px;
+    }
+
+    .footer__icons {
+        column-gap: 30px;
     }
 }
 
@@ -224,7 +301,6 @@
 
 }
 
-
 @media screen and (max-width: 767px) {
     .contact__left-circle {
         top: 17%;
@@ -248,34 +324,17 @@
 
 }
 
-
 @media screen and (max-width: 576px) {
-    .contact__title{
-        font-size: 23px;
-    }
-    .contact__subtitle {
-        font-size: 20px;
-    }
-    .contact__form {
-        width: 325px;
-        height: 600px;
-        padding: 51px;
-    }
-    .contact__btn{
-        width: 190px;
-        font-size: 14px;
-        padding: 14px 0;
-        margin-top: 0;
-    }
-    .contact__left-circle {
-        top: 15%;
-    }
-    .contact__icon-1{
-        top: 0;
-    }
-    .contact__joystick-1, .contact__joystick-2 {
-        width: 130px;
-        bottom: 45px;
-    }
+
 }
+
+
+
+
+
+
+
+
+
+
 
