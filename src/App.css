@@ -1435,7 +1435,7 @@ a {
 
 
 .reason{
-    padding-left: 120px;
+    padding-left: 50px;
 }
     .reason__title{
         font-size: 25px;
@@ -1451,7 +1451,7 @@ a {
 
 
     .program{
-        padding-left: 120px;
+        padding-left: 50px;
     }
     .program__title{
         font-size: 25px;
@@ -1482,18 +1482,18 @@ a {
     }
     .address__chair{
         width: 100%;
-        bottom: -12%;
+        bottom: -17%;
         left: -5%;
     }
     .address__hall{
         width: 25%;
-        bottom: 30%;
+        bottom: 25%;
         left: -32%;
         z-index: 1;
     }
     .address__facade{
         width: 35%;
-        bottom: 29%;
+        bottom: 24%;
         right: 26%;
         z-index: 1;
     }
