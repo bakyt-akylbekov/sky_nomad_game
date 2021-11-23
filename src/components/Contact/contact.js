@@ -10,8 +10,8 @@ import icon3 from '../../assets/images/Contact/icon3.png'
 import icon4 from '../../assets/images/Contact/icon4.png'
 import ellipse1 from '../../assets/images/Contact/ellipse1.png'
 import ellipse2 from '../../assets/images/Contact/ellipse2.png'
-import leftCircle from '../../assets/images/Contact/left-circle.png'
-import rightCircle from '../../assets/images/Contact/right-circle.png'
+// import leftCircle from '../../assets/images/Contact/left-circle.png'
+// import rightCircle from '../../assets/images/Contact/right-circle.png'
 import redCircle from '../../assets/images/Contact/img.png'
 import logo from "../../assets/images/Header/Logo.png";
 import instagram from "../../assets/images/Footer/Icon awesome-instagram.svg";
@@ -28,8 +28,7 @@ const Contact = () => {
     return (
         <section className='contact' id='contact'>
             <h2 className="contact__title">
-                Успейте записаться,
-                пока есть места на курсе
+                Успейте записаться
             </h2>
             <div className="contact__block">
                 <form className="contact__form">
@@ -126,8 +125,8 @@ const Contact = () => {
             <img src={icon1} alt="" className="contact__icon-5"/>
             <img src={ellipse1} alt="" className="contact__ellipse-1"/>
             <img src={ellipse2} alt="" className="contact__ellipse-2"/>
-            <img src={leftCircle} alt="" className="contact__left-circle"/>
-            <img src={rightCircle} alt="" className="contact__right-circle"/>
+            {/*<img src={leftCircle} alt="" className="contact__left-circle"/>*/}
+            {/*<img src={rightCircle} alt="" className="contact__right-circle"/>*/}
             <img src={redCircle} alt="" className="contact__red-circle"/>
         </section>
     );

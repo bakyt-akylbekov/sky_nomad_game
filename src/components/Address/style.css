@@ -11,6 +11,16 @@
 .address__title{
     font-size: 47px;
     color: #8AAFCC;
+    position: relative;
+}
+.address__title::after{
+    content: '';
+    background: url("../../assets/images/Address/line.png") no-repeat;
+    width: 261px;
+    height: 30px;
+    position: absolute;
+    left: -48%;
+    top: 17px;
 }
 .address__text{
     letter-spacing: 0.3px;

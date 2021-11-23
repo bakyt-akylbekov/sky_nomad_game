@@ -11,7 +11,7 @@ import icon3 from '../.././assets/images/Program/icon3.png'
 import icon4 from '../.././assets/images/Program/icon4.png'
 import icon5 from '../.././assets/images/Program/icon5.png'
 import leftLine from '../.././assets/images/Program/left-line.png'
-import rightLine from '../.././assets/images/Program/right-line.png'
+//import rightLine from '../.././assets/images/Program/right-line.png'
 import arrowIcon from "../../assets/images/Reason/Icon ionic-ios-arrow-down.png";
 
 import './style.css'
@@ -180,7 +180,7 @@ const Program = () => {
             <img src={icon4} alt="" className="program__icon-4"/>
             <img src={icon5} alt="" className="program__icon-5"/>
             <img src={leftLine} alt="" className="program__left-line"/>
-            <img src={rightLine} alt="" className="program__right-line"/>
+            {/*<img src={rightLine} alt="" className="program__right-line"/>*/}
 
         </section>
     );

@@ -6,7 +6,7 @@ import facade from '../.././assets/images/Address/facade.png'
 import icon1 from '../.././assets/images/Address/icon1.png'
 import icon2 from '../.././assets/images/Address/icon2.png'
 import icon3 from '../.././assets/images/Address/icon3.png'
-import line from '../.././assets/images/Address/line.png'
+//import line from '../.././assets/images/Address/line.png'
 
 import './style.css'
 
@@ -42,7 +42,7 @@ const Address = () => {
             <img src={icon2} alt="" className="address__icon-2"/>
             <img src={icon3} alt="" className="address__icon-3"/>
             <img src={icon1} alt="" className="address__icon-4"/>
-            <img src={line} alt="" className="address__line"/>
+            {/*<img src={line} alt="" className="address__line"/>*/}
         </section>
     );
 };

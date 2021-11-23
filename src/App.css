@@ -112,6 +112,11 @@ a {
         max-width: 1340px;
     }
 
+
+    .header__menu::after {
+        right: -75%;
+    }
+
     .about__right-top-circle {
         right: -7%;
     }
@@ -145,6 +150,10 @@ a {
         left: -9%;
     }
 
+    .program__title::after {
+        right: -45%;
+    }
+
     .program__ellipse-1 {
         left: -14%;
     }
@@ -157,6 +166,10 @@ a {
         right: 0;
     }
 
+    .address__title::after {
+        left: -45%;
+    }
+
     .address__line {
         left: -8%;
     }
@@ -167,6 +180,16 @@ a {
 
     .address__facade {
         right: -22%;
+    }
+
+
+    .contact__title::before {
+        left: -3%;
+
+    }
+
+    .contact__title:after {
+        right: -3%;
     }
 
     .contact__right-circle {
@@ -229,8 +252,13 @@ a {
         font-size: 16px;
     }
 
+    .suitable__title::after {
+        right: -55%;
+    }
+
     .suitable__right-top-circle {
         right: -10px;
+        top: 31.5%;
     }
 
     .suitable__emoji {
@@ -273,6 +301,10 @@ a {
         font-size: 40px;
     }
 
+    .reason__title::after {
+        left: -29%;
+    }
+
     .reason__subtitle {
         font-size: 16px;
     }
@@ -292,6 +324,10 @@ a {
 
     .program__title {
         font-size: 40px;
+    }
+
+    .program__title::after {
+        right: -45%;
     }
 
     .program__student {
@@ -318,6 +354,12 @@ a {
         font-size: 39px;
     }
 
+
+    .address__title::after {
+        left: -60%;
+        top: 14px;
+    }
+
     .address__line {
         left: -2%;
         top: 19.5%;
@@ -342,6 +384,15 @@ a {
 
     .address__map {
         width: 90%;
+    }
+
+    .contact__title::before {
+        left: -9%;
+
+    }
+
+    .contact__title:after {
+        right: -9%;
     }
 
     .contact__title {
@@ -385,13 +436,16 @@ a {
     .contact__icon-3 {
         left: 28%;
     }
+
     .footer__item-2 {
-       text-align: left;
+        text-align: left;
         padding-left: 20px;
     }
-    .footer__item-3{
+
+    .footer__item-3 {
 
     }
+
     .footer__icons {
         column-gap: 15px;
     }
@@ -431,7 +485,6 @@ a {
     /*.container__contact{*/
     /*    margin-top: 85px;*/
     /*}*/
-
     .contact__right-circle {
         left: -13%;
     }
@@ -461,6 +514,10 @@ a {
     .about::after {
         right: -12%;
         bottom: -19%;
+    }
+
+    .suitable__title::after {
+        right: -40%;
     }
 
     .suitable__right-top-circle {
@@ -501,6 +558,19 @@ a {
     .address__hall {
         right: 65%;
         bottom: 23%;
+    }
+
+    .program__title::after {
+        top: 18px;
+    }
+
+    .contact__title::before {
+        left: -23%;
+
+    }
+
+    .contact__title::after {
+        right: -23%;
     }
 
     .contact__left-circle {
@@ -600,6 +670,11 @@ a {
         height: 900px;
     }
 
+
+    .suitable__title::after {
+        display: none;
+    }
+
     .suitable__icon-3,
     .suitable__icon-5,
     .suitable__icon-6,
@@ -615,7 +690,7 @@ a {
     }
 
     .suitable__emoji {
-        width: 60%;
+        width: 45%;
         position: absolute;
         left: 13%;
         top: 45%;
@@ -635,7 +710,7 @@ a {
         transform: rotate(35deg);
         width: 400px;
         bottom: -7%;
-        left: -10%;
+        left: -4%;
     }
 
     .suitable__icon-1 {
@@ -665,13 +740,18 @@ a {
     }
 
 
+    .result__center-line {
+        transform: translate(-50%, 35%);
+    }
 
     .result__text {
         padding-left: 0;
     }
+
     .result__item {
         margin-bottom: 10px;
     }
+
     .result__title {
         color: #ffffff;
     }
@@ -738,6 +818,10 @@ a {
         color: #ffffff;
     }
 
+    .reason__title::after {
+        display: none;
+    }
+
     .reason__ellipse-1 {
         left: -24%;
         width: 70%;
@@ -759,7 +843,8 @@ a {
     .program__icon-4,
     .program__icon-5,
     .program__student,
-    .program__net {
+    .program__net,
+    .program__title::after {
         display: none;
     }
 
@@ -806,7 +891,8 @@ a {
     .address__icon-1,
     .address__icon-2,
     .address__icon-3,
-    .address__icon-4 {
+    .address__icon-4,
+    .address__title::after {
         display: none;
     }
 
@@ -852,7 +938,9 @@ a {
     .contact__ellipse-2,
     .contact__left-circle,
     .contact__right-circle,
-    .container__contact {
+    .container__contact,
+    .contact__title::before,
+    .contact__title::after {
         display: none;
     }
 
@@ -916,7 +1004,7 @@ a {
 
     .about__joystick {
         width: 65%;
-        transform: translate(-50%, -6%);
+        transform: translate(-50%, -14%);
     }
 
     .about__btn {
@@ -939,17 +1027,18 @@ a {
 
 
     .suitable {
-        height: 980px;
+        background: url("./assets/images/Suitable/mobileBg.png") top left/100% 100% no-repeat;
+        height: 820px;
     }
 
     .suitable__title {
         font-size: 30px;
-        padding: 0 120px;
+        padding: 0 120px 0 15px;
         text-align: center;
     }
 
     .suitable__icon-1 {
-        top: 53%;
+        top: 54%;
         width: 8%;
     }
 
@@ -965,9 +1054,13 @@ a {
     }
 
     .suitable__emoji {
+        width: 45%;
         top: 52%;
     }
 
+    .suitable__ellipse {
+        bottom: -12%;
+    }
     .suitable__text {
         padding-right: 155px;
     }
@@ -995,6 +1088,7 @@ a {
     .result__item {
         margin-bottom: 8px;
     }
+
     .result__text {
         padding-left: 0;
         margin-bottom: 40px;
@@ -1311,23 +1405,28 @@ a {
     .container {
         max-width: 320px;
     }
+
     .header__img {
         width: 52%;
     }
+
     .about {
         height: 920px;
     }
+
     .about::before {
         width: 350px;
         height: 350px;
         transform: translate(-35%, -21%);
     }
+
     .about::after {
         width: 350px;
         height: 350px;
         bottom: -15%;
         right: -36%;
     }
+
     .about__block {
         padding-top: 67%;
     }
@@ -1335,10 +1434,12 @@ a {
     .about__title {
         font-size: 33px;
     }
+
     .about__text {
         font-size: 14px;
         padding-right: 10px;
     }
+
     .about__joystick {
         width: 70%;
         transform: translate(-28%, -5%);
@@ -1347,6 +1448,7 @@ a {
     .about__icon-2 {
         width: 12%;
     }
+
     .about__btn {
         padding: 14px 0;
         font-size: 15px;
@@ -1356,50 +1458,49 @@ a {
     }
 
 
-
-
-
-
-    .suitable{
+    .suitable {
         height: 850px;
     }
+
     .suitable__title {
         font-size: 25px;
-        padding: 0 70px 0 50px;
+        padding: 0 70px 0 0;
         text-align: center;
     }
-    .suitable__text{
+
+    .suitable__text {
         font-size: 14px;
         padding-left: 80px;
         padding-right: 20px;
     }
-    .suitable__icon{
+
+    .suitable__icon {
         width: 50px;
     }
+
     .suitable__emoji {
-        width: 75%;
+        width: 45%;
         top: 56%;
+        left: 20%;
     }
+
     .suitable__ellipse {
         width: 350px;
         bottom: -8%;
-        left: -30%;
+        left: -9%;
     }
+
     .suitable__icon-1 {
         top: 55%;
     }
+
     .suitable__icon-4 {
         bottom: 92%;
         left: 85%;
     }
 
 
-
-
-
-
-
-    .result__title{
+    .result__title {
         font-size: 25px;
         padding: 0 80px;
     }
@@ -1408,79 +1509,85 @@ a {
         left: 73%;
     }
 
-    .result__text{
+    .result__text {
         font-size: 14px;
         padding-right: 24px;
     }
+
     .result__icon-2 {
         right: -4%;
     }
+
     .result__icon-3 {
         top: 75%;
     }
-    .result__joystick{
+
+    .result__joystick {
         width: 35%;
         bottom: -6px;
         left: 12px
     }
-    .result__trophy{
+
+    .result__trophy {
         width: 35%;
         bottom: -6px;
         right: 12px
     }
+
     .result__ellipse-1 {
         width: 75%;
         left: -17%;
         bottom: -10%;
     }
+
     .result__ellipse-3 {
         width: 75%;
         right: -17%;
         bottom: -10%;
     }
+
     .result__icon-4 {
         right: 76%;
         bottom: 76%;
     }
 
 
+    .reason {
+        padding-left: 50px;
+    }
 
-.reason{
-    padding-left: 50px;
-}
-    .reason__title{
+    .reason__title {
         font-size: 25px;
         padding-right: 63%;
     }
-    .reason__subtitle{
+
+    .reason__subtitle {
         font-size: 16px;
     }
+
     .reason__text {
         left: 0;
     }
 
 
-
-
-
-
-    .program{
+    .program {
         padding-left: 50px;
     }
-    .program__title{
+
+    .program__title {
         font-size: 25px;
     }
-    .program__item{
+
+    .program__item {
         outline: none;
     }
-
-
 
 
     .address {
         height: 910px;
     }
-    .address__title{
+
+    .address__title {
         font-size: 25px;
     }
 
@@ -1494,21 +1601,25 @@ a {
         position: absolute;
         left: -16%;
     }
-    .address__images{
+
+    .address__images {
         height: 480px;
     }
-    .address__chair{
+
+    .address__chair {
         width: 100%;
         bottom: -17%;
         left: -5%;
     }
-    .address__hall{
+
+    .address__hall {
         width: 25%;
         bottom: 25%;
         left: -32%;
         z-index: 1;
     }
-    .address__facade{
+
+    .address__facade {
         width: 35%;
         bottom: 24%;
         right: 26%;
@@ -1516,13 +1627,11 @@ a {
     }
 
 
-
-
-
     .contact {
         height: 770px;
     }
-    .contact__title{
+
+    .contact__title {
         font-size: 25px;
         padding: 0 35px;
     }
@@ -1532,25 +1641,44 @@ a {
         height: 500px;
         padding: 45px;
     }
+
     .contact__subtitle {
         font-size: 20px;
     }
 
-    .contact__btn{
+    .contact__btn {
         width: 190px;
         font-size: 14px;
         padding: 14px 0;
         margin-top: 0;
     }
-    .contact__input::placeholder{
+
+    .contact__input::placeholder {
         font-size: 14px;
     }
-    .contact__item{
+
+    .contact__item {
         margin-bottom: 50px;
     }
 
 }
 
+
+@media screen and (max-width: 576px) {
+    .about__joystick {
+        transform: translate(-28%, 4%);
+    }
+    .suitable {
+        height: 730px;
+    }
+    .suitable__ellipse {
+        bottom: -16%;
+        left: -19%;
+    }
+    .suitable__emoji {
+        top: 61%;
+    }
+}
 
 @media screen and (max-width: 375px) {
     .container {

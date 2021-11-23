@@ -7,7 +7,7 @@ import ellipse2 from '../.././assets/images/Reason/ellipse2.png'
 import icon1 from '../.././assets/images/Reason/icon1.png'
 import icon2 from '../.././assets/images/Reason/icon2.png'
 import icon3 from '../.././assets/images/Reason/icon3.png'
-import horizontalLine from '../.././assets/images/Reason/horizont-line.png'
+//import horizontalLine from '../.././assets/images/Reason/horizont-line.png'
 import arrowIcon from '../.././assets/images/Reason/Icon ionic-ios-arrow-down.png'
 
 import './style.css'
@@ -196,7 +196,7 @@ const Reason = () => {
             <img src={icon1} alt="" className="reason__icon-1"/>
             <img src={icon2} alt="" className="reason__icon-2"/>
             <img src={icon3} alt="" className="reason__icon-3"/>
-            <img src={horizontalLine} alt="" className="reason__horizontal-line"/>
+            {/*<img src={horizontalLine} alt="" className="reason__horizontal-line"/>*/}
 
         </section>
     );

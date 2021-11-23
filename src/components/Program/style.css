@@ -12,6 +12,16 @@
     font-size: 47px;
     color: #C4A39B;
     text-align: right;
+    position: relative;
+}
+.program__title::after{
+    content: '';
+    background: url("../../assets/images/Program/right-line.png") no-repeat;
+    width: 261px;
+    height: 30px;
+    position: absolute;
+    right: -50%;
+    top: 25px;
 }
 .program__subtitle{
     font-size: 20px;

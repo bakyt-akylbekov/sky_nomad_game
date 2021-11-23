@@ -97,7 +97,7 @@ const About = () => {
                 </div>
             </div>
             <img src={leftCircle} className='about__left-circle' alt="about__left-circle"/>
-            <img src={rightCircle} className='about__right-top-circle' alt="about__right-top-circle"/>
+            {/*<img src={rightCircle} className='about__right-top-circle' alt="about__right-top-circle"/>*/}
             <img src={rightCircle} className='about__right-bottom-circle' alt="about__right-bottom-circle"/>
             <img src={yellowLine} className='about__yellow-line' alt="about__yellow-line"/>
             <img src={icon1} className='about__icon-1' alt="about__icon-1"/>

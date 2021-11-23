@@ -3,7 +3,7 @@ import React from 'react';
 import emoji from '../.././assets/images/Suitable/Emoji2.png'
 import checkMark from '../.././assets/images/Suitable/checkMark.png'
 import leftCircle from '../.././assets/images/Suitable/left-circle.png'
-import rightTopCircle from '../.././assets/images/Suitable/right-top-circle.png'
+//import rightTopCircle from '../.././assets/images/Suitable/right-top-circle.png'
 import rightBottomCircle from '../.././assets/images/Suitable/right-bottom-circle.png'
 import icon1 from '../.././assets/images/Suitable/icon1.png'
 import icon2 from '../.././assets/images/Suitable/icon2.png'
@@ -57,7 +57,7 @@ const Suitable = () => {
                 </div>
             </div>
             <img src={leftCircle} alt="" className="suitable__left-circle"/>
-            <img src={rightTopCircle} alt="" className="suitable__right-top-circle"/>
+            {/*<img src={rightTopCircle} alt="" className="suitable__right-top-circle"/>*/}
             <img src={rightBottomCircle} alt="" className="suitable__right-bottom-circle"/>
             <img src={icon1} alt="" className="suitable__icon-1"/>
             <img src={icon2} alt="" className="suitable__icon-2"/>

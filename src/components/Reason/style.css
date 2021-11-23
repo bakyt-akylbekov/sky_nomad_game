@@ -13,8 +13,17 @@
     line-height: 53px;
     color: #D4B0BA;
     margin-bottom: 60px;
+    position: relative;
 }
-
+.reason__title::after{
+    content: '';
+    background: url("../../assets/images/Reason/horizont-line.png") no-repeat;
+    width: 262px;
+    height: 30px;
+    position: absolute;
+    left: -22%;
+    top: 13px;
+}
 .reason__title span {
     color: #FFC400;
 }
