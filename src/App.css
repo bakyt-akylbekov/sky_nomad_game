@@ -1035,6 +1035,7 @@ a {
         position: absolute;
         left: -5%;
         top: 27%;
+        z-index: -1;
     }
     .about__btn {
         margin-top: 82%;
