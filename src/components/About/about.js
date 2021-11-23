@@ -68,7 +68,7 @@ const About = () => {
                     </a>
                 </li>
                 <li className="about__icon">
-                    <a href="https://www.facebook.com/" className="about__link" target='_blank' rel="noreferrer">
+                    <a href="https://www.facebook.com/sky.nomad.academy" className="about__link" target='_blank' rel="noreferrer">
                         <img src={facebook} alt="facebook" className='about__facebook'/>
                     </a>
                 </li>

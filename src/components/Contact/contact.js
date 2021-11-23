@@ -146,7 +146,7 @@ const Contact = () => {
                                     </a>
                                 </li>
                                 <li className="footer__icon">
-                                    <a href="https://www.facebook.com/" className="footer__link" target='_blank'
+                                    <a href="https://www.facebook.com/sky.nomad.academy" className="footer__link" target='_blank'
                                        rel="noreferrer">
                                         <img src={facebook} alt="facebook" className='footer__facebook'/>
                                     </a>
