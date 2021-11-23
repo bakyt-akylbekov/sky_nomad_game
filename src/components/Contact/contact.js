@@ -39,17 +39,17 @@ const Contact = () => {
                                placeholder='example@mail.com'
                                name='email'
                         />
-                        <img src={bottomLine} alt="bottomLine"  className='contact__bottom-line'/>
+                        <img src={bottomLine} alt="bottomLine" className='contact__bottom-line'/>
                     </div>
                     <div className="contact__or">
                         <p>ИЛИ</p>
                     </div>
                     <div className="contact__item">
                         <input type="tel" className="contact__input" placeholder='+996 000 000 000'/>
-                        <img src={bottomLine} alt="bottomLine"  className='contact__bottom-line'/>
+                        <img src={bottomLine} alt="bottomLine" className='contact__bottom-line'/>
                     </div>
                     <button type='submit'
-                            // disabled={!formValid}
+                        // disabled={!formValid}
                             className="contact__btn">
                         Записаться
                         <img src={btnTop} alt="btn-top" className='contact__btn-top'/>
@@ -85,27 +85,87 @@ const Contact = () => {
                         <div className="footer__item footer__item-4">
                             <ul className="footer__icons">
                                 <li className="footer__icon">
-                                    <a href="https://www.instagram.com/sky.nomad.academy/?hl=ru" className="footer__link" target='_blank' rel="noreferrer">
+                                    <a href="https://www.instagram.com/sky.nomad.academy/?hl=ru"
+                                       className="footer__link" target='_blank' rel="noreferrer">
                                         <img src={instagram} alt="instagram" className='footer__instagram'/>
                                     </a>
                                 </li>
                                 <li className="footer__icon">
-                                    <a href="https://www.facebook.com/" className="footer__link" target='_blank'  rel="noreferrer">
+                                    <a href="https://www.facebook.com/" className="footer__link" target='_blank'
+                                       rel="noreferrer">
                                         <img src={facebook} alt="facebook" className='footer__facebook'/>
                                     </a>
                                 </li>
                                 <li className="footer__icon">
-                                    <a href="https://teleg.one/Skynomadacademy" className="footer__link" target='_blank'  rel="noreferrer">
+                                    <a href="https://teleg.one/Skynomadacademy" className="footer__link" target='_blank'
+                                       rel="noreferrer">
                                         <img src={telegram} alt="telegram" className='footer__telegram'/>
                                     </a>
                                 </li>
                                 <li className="footer__icon">
-                                    <a href="https://wa.me/996550602010" className="footer__link" target='_blank'  rel="noreferrer">
+                                    <a href="https://wa.me/996550602010" className="footer__link" target='_blank'
+                                       rel="noreferrer">
                                         <img src={whatsapp} alt="whatsapp" className='footer__whatsapp'/>
                                     </a>
                                 </li>
                                 <li className="footer__icon">
-                                    <a href="https://www.tiktok.com/@sky.nomad.academy?lang=en" className="footer__link" target='_blank'  rel="noreferrer">
+                                    <a href="https://www.tiktok.com/@sky.nomad.academy?lang=en" className="footer__link"
+                                       target='_blank' rel="noreferrer">
+                                        <img src={tiktok} alt="tiktok" className='footer__tiktok'/>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="container contact__mob-container">
+                <div className="row">
+                    <div className="contact__mob-col">
+                        <div className="contact__mob-item contact__mob-item-1">
+                            <a href="mailto:sky.nomad.academy@gmail.com" className="footer__email">
+                                sky.nomad.academy@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                    <div className="contact__mob-col">
+                        <div className="contact__mob-item contact__mob-item-2">
+                            <a href="tel:+996 505 60 20 10" className='footer__tel'>
+                                +996 505 60 20 10
+                            </a>
+                        </div>
+                    </div>
+                    <div className="contact__mob-col contact__mob-col-3">
+                        <div className="contact__mob-item">
+                            <ul className="footer__icons">
+                                <li className="footer__icon">
+                                    <a href="https://www.instagram.com/sky.nomad.academy/?hl=ru"
+                                       className="footer__link" target='_blank' rel="noreferrer">
+                                        <img src={instagram} alt="instagram" className='footer__instagram'/>
+                                    </a>
+                                </li>
+                                <li className="footer__icon">
+                                    <a href="https://www.facebook.com/" className="footer__link" target='_blank'
+                                       rel="noreferrer">
+                                        <img src={facebook} alt="facebook" className='footer__facebook'/>
+                                    </a>
+                                </li>
+                                <li className="footer__icon">
+                                    <a href="https://teleg.one/Skynomadacademy" className="footer__link" target='_blank'
+                                       rel="noreferrer">
+                                        <img src={telegram} alt="telegram" className='footer__telegram'/>
+                                    </a>
+                                </li>
+                                <li className="footer__icon">
+                                    <a href="https://wa.me/996550602010" className="footer__link" target='_blank'
+                                       rel="noreferrer">
+                                        <img src={whatsapp} alt="whatsapp" className='footer__whatsapp'/>
+                                    </a>
+                                </li>
+                                <li className="footer__icon">
+                                    <a href="https://www.tiktok.com/@sky.nomad.academy?lang=en" className="footer__link"
+                                       target='_blank' rel="noreferrer">
                                         <img src={tiktok} alt="tiktok" className='footer__tiktok'/>
                                     </a>
                                 </li>

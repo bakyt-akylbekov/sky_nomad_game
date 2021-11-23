@@ -143,7 +143,7 @@ const Program = () => {
                             </div>
                         </div>
                         <div className="col-4">
-                            <div className="program__item">
+                            <div className="program__item program__item-3">
                                 <h4 className="program__subtitle program__subtitle-3">
                                     Поддержка
                                 </h4>

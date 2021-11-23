@@ -9,6 +9,7 @@ import tiktok from "../../assets/images/Footer/Icon simple-tiktok.svg";
 import leftCircle from "../../assets/images/About/left-circle.png";
 import rightCircle from "../../assets/images/About/right-circle.png";
 import joystick from "../../assets/images/About/joystick.png";
+import mobJoystick from "../../assets/images/About/mobileJoy.png";
 import img1 from "../../assets/images/About/img1.png";
 import img2 from "../../assets/images/About/img2.png";
 import img3 from "../../assets/images/About/img3.png";
@@ -16,13 +17,12 @@ import yellowLine from "../../assets/images/About/yellow-line.png";
 import btnPlay from "../../assets/images/About/ButtonPlay.png";
 import icon1 from "../../assets/images/Reason/icon1.png";
 import icon2 from "../../assets/images/Program/icon2.png";
+import video from "../../assets/video/game-video.mp4";
 
 import './style.css'
 
 
 const About = () => {
-
-    // const [modalActive, setModalActive] = useState(false);
 
     return (
         <section className='about' id='about'>
@@ -53,6 +53,7 @@ const About = () => {
                 </div>
             </div>
             <img src={joystick} alt="" className="about__joystick"/>
+            <img src={mobJoystick} alt="" className="about__mob-joystick"/>
             <ul className="about__icons">
                 <li className="about__icon">
                     <a href="https://teleg.one/Skynomadacademy" className="about__link" target='_blank'
@@ -88,7 +89,12 @@ const About = () => {
                 <img src={img2} alt="" className="about__img-2"/>
                 <img src={img3} alt="" className="about__img-3"/>
                 <div className="about__gallery-block">
-                    <a href="#about" className='about__gallery-block-link'>
+
+                    {/*<video width="400" height="300" controls="controls" poster={btnPlay}>*/}
+                    {/*    <source src={video} type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'> </source>*/}
+                    {/*</video>*/}
+
+                    <a href={video} className='about__gallery-block-link'>
                         <img src={btnPlay} alt="btnPlay"/>
                         <span className='about__gallery-title'>
                             Галерея <br/> <span>SkyNomadAcademy</span>

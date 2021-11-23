@@ -141,7 +141,7 @@ const Reason = () => {
                             </div>
                         </div>
                         <div className="col-4">
-                            <div className="reason__item">
+                            <div className="reason__item reason__item-2">
                                 <h4 className="reason__subtitle">
                                     Постоянное развитие
                                 </h4>
@@ -163,7 +163,7 @@ const Reason = () => {
                             </div>
                         </div>
                         <div className="col-4">
-                            <div className="reason__item">
+                            <div className="reason__item reason__item-3">
                                 <h4 className="reason__subtitle">
                                     Весёлый досуг
                                 </h4>

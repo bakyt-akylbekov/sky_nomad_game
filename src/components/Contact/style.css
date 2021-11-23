@@ -120,13 +120,15 @@
     left: 10px;
     bottom: -30px;
 }
-
+.contact__mob-container{
+    display: none;
+}
 
 .footer__logo{
     width: 50%;
 }
 .footer__item{
-    margin-top: 110px;
+    margin-top: 125px;
 }
 .footer__item-2 {
     text-align: center;

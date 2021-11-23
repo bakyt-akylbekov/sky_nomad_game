@@ -611,9 +611,9 @@ a {
         width: 100%;
     }
 
-    .col-3 {
-        width: 50%;
-    }
+    /*.col-3 {*/
+    /*    width: 50%;*/
+    /*}*/
 
     .header__menu {
         display: none;
@@ -938,14 +938,25 @@ a {
     .contact__ellipse-2,
     .contact__left-circle,
     .contact__right-circle,
-    .container__contact,
     .contact__title::before,
-    .contact__title::after {
+    .contact__title::after,
+    .container__contact{
         display: none;
     }
 
+    .footer__item{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .footer__icons{
+        justify-content: center;
+    }
+    .footer__item-2{
+        padding-left: 0;
+        padding-top: 8px;
+    }
     .contact {
-        height: 980px;
+        height: 1040px;
     }
 
     .contact__red-circle {
@@ -955,8 +966,21 @@ a {
     .contact__title {
         color: #ffffff;
     }
-}
 
+    .contact__mob-container{
+        display: block;
+        margin-top: 80px;
+    }
+    .contact__mob-col{
+        width: 33.3%;
+    }
+
+    .contact__mob-item-2{
+        padding-left: 80px;
+    }
+
+
+}
 
 @media screen and (max-width: 767px) {
     .container {
@@ -1003,10 +1027,15 @@ a {
     }
 
     .about__joystick {
+        display: none;
         width: 65%;
         transform: translate(-50%, -14%);
     }
-
+    .about__mob-joystick {
+        position: absolute;
+        left: -5%;
+        top: 27%;
+    }
     .about__btn {
         margin-top: 82%;
         margin-left: 10%;
@@ -1178,7 +1207,12 @@ a {
         box-shadow: 0 0 17px 1px rgba(250, 228, 249, 0.8);
         margin-right: 15px;
     }
-
+    .reason__item-2{
+        background: #ffedd2 linear-gradient(rgba(255, 255, 255, 0) 20%, #fff 55%);
+    }
+    .reason__item-3{
+        background: #d7ffd1 linear-gradient(rgba(255, 255, 255, 0) 20%, #fff 55%);
+    }
 
     .reason__text {
         height: 190px;
@@ -1286,8 +1320,8 @@ a {
     }
 
     .program__subtitle-3 {
-        background: linear-gradient(0deg, rgba(196, 47, 156, 1) 0%, rgba(234, 67, 92, 1) 97%);
-        box-shadow: 0 0 50px 15px rgba(234, 67, 92, 0.50);
+        background: linear-gradient(0deg, rgba(42,99,244,1) 0%, rgba(182,25,237,1) 95%);
+        box-shadow: 0 0 50px 15px rgba(197,28,255,0.5);
     }
 
     .program__item {
@@ -1303,6 +1337,10 @@ a {
     .program__item-2 {
         box-shadow: 0 0 50px 15px rgba(255, 168, 38, 0.50);
     }
+    .program__item-3{
+        box-shadow: 0 0 50px 15px rgba(197,28,255,0.5);
+    }
+
 
     .program__text {
         height: 232px;
@@ -1386,10 +1424,9 @@ a {
         padding: 0 105px;
     }
 
-
     .footer__item {
         text-align: center;
-
+        margin-top: 28px;
     }
 
     .footer__item-4 {
@@ -1397,9 +1434,20 @@ a {
         justify-content: center;
 
     }
-
+    .contact__mob-col{
+        width: 50%;
+    }
+    .contact__mob-col-3{
+        width: 100%;
+        margin-top: 45px;
+    }
+    .contact__mob-item-1{
+        padding-left: 35px;
+    }
+    .contact__mob-item-2{
+        padding-left: 85px;
+    }
 }
-
 
 @media screen and (max-width: 576px) {
     .container {
@@ -1424,7 +1472,7 @@ a {
         width: 350px;
         height: 350px;
         bottom: -15%;
-        right: -36%;
+        right: -17%;
     }
 
     .about__block {
@@ -1440,10 +1488,6 @@ a {
         padding-right: 10px;
     }
 
-    .about__joystick {
-        width: 70%;
-        transform: translate(-28%, -5%);
-    }
 
     .about__icon-2 {
         width: 12%;
@@ -1456,10 +1500,11 @@ a {
         margin-top: 120%;
         margin-left: 18%;
     }
-
-
+    .about__mob-joystick {
+        left: -9%;
+    }
     .suitable {
-        height: 850px;
+        height: 730px;
     }
 
     .suitable__title {
@@ -1628,7 +1673,7 @@ a {
 
 
     .contact {
-        height: 770px;
+        height: 810px;
     }
 
     .contact__title {
@@ -1656,27 +1701,36 @@ a {
     .contact__input::placeholder {
         font-size: 14px;
     }
-
+    .contact__mob-container {
+        margin-top: 20px;
+    }
     .contact__item {
         margin-bottom: 50px;
+    }
+    .contact__mob-col{
+        width: 100%;
+    }
+    .contact__mob-col-3{
+        margin-top: 0;
+    }
+    .contact__mob-item{
+        text-align: center;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+    .contact__mob-item-2{
+        padding-left: 0;
     }
 
 }
 
-
-@media screen and (max-width: 576px) {
-    .about__joystick {
-        transform: translate(-28%, 4%);
-    }
-    .suitable {
-        height: 730px;
+@media screen and (max-width: 414px){
+    .about__mob-joystick {
+        left: -31%;
     }
     .suitable__ellipse {
-        bottom: -16%;
-        left: -19%;
-    }
-    .suitable__emoji {
-        top: 61%;
+        bottom: -14%;
+        left: -20%;
     }
 }
 
