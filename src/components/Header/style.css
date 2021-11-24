@@ -29,6 +29,16 @@
     z-index: -1;
 }
 
+.player-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+.video-wrapper {
+    width: 70%;
+    height: auto;
+}
+
 .header__link {
     color: #ffffff;
     margin-left: 30px;

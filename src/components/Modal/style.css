@@ -12,20 +12,26 @@
     pointer-events: none;
     transition: 0.5s;
     color: black;
+    z-index: 99;
 }
 .modal.active{
     opacity: 1;
     pointer-events: all;
+    z-index: 99;
 }
 .modal__content{
-    display: flex;
-    justify-content: center;
     padding: 20px;
     border-radius: 12px;
     background-color: #ffffff;
-    width: 50vw;
+    width: 100%;
+    max-width: 700px;
+    max-height: 100vh;
     transform: scale(0.5);
     transition: 0.4s all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
 }
 .modal__content.active{
     transform: scale(1);

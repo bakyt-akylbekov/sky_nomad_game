@@ -1032,10 +1032,11 @@ a {
         transform: translate(-50%, -14%);
     }
     .about__mob-joystick {
+        display: block;
         position: absolute;
         left: -5%;
         top: 27%;
-        z-index: -1;
+        z-index: -5;
     }
     .about__btn {
         margin-top: 82%;
@@ -1043,12 +1044,14 @@ a {
     }
 
     .about__icon-1 {
+        display: block;
         position: absolute;
         left: 4%;
         bottom: 20%;
     }
 
     .about__icon-2 {
+        display: block;
         width: 7%;
         position: absolute;
         right: 5%;

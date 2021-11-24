@@ -1,4 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
+import axios from "axios";
+
 import bottomLine from '../../assets/images/Contact/bottom-line.png'
 import btnTop from '../../assets/images/Contact/btn-top.png'
 import btnBottom from '../../assets/images/Contact/btn-bottom.png'
@@ -22,8 +24,17 @@ import tiktok from "../../assets/images/Footer/Icon simple-tiktok.svg";
 
 import './style.css'
 
-
 const Contact = () => {
+    const [email, setEmail] = useState('');
+    const [tel, setTel] = useState('');
+    const sendFormHandler = () => {
+        const obj = {
+            email,
+            tel,
+        }
+        axios.post('https://send-master.herokuapp.com/send', obj)
+        console.log(obj)
+    }
 
     return (
         <section className='contact' id='contact'>
@@ -31,13 +42,14 @@ const Contact = () => {
                 Успейте записаться
             </h2>
             <div className="contact__block">
-                <form className="contact__form">
+                <form action="/send" method="post" className="contact__form" onSubmit={sendFormHandler}>
                     <h4 className="contact__subtitle">Оставьте заявку</h4>
                     <div className="contact__item">
                         <input type="email"
                                className="contact__input"
                                placeholder='example@mail.com'
                                name='email'
+                               onChange={(e) => setEmail(e.target.value)}
                         />
                         <img src={bottomLine} alt="bottomLine" className='contact__bottom-line'/>
                     </div>
@@ -45,7 +57,11 @@ const Contact = () => {
                         <p>ИЛИ</p>
                     </div>
                     <div className="contact__item">
-                        <input type="tel" className="contact__input" placeholder='+996 000 000 000'/>
+                        <input type="tel"
+                               className="contact__input"
+                               placeholder='+996 000 000 000'
+                               onChange={(e) => setTel(e.target.value)}
+                        />
                         <img src={bottomLine} alt="bottomLine" className='contact__bottom-line'/>
                     </div>
                     <button type='submit'

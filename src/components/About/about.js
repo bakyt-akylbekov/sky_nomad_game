@@ -1,4 +1,6 @@
-import React from 'react';
+import React, {useRef, useState} from 'react';
+import Modal from "../Modal/modal";
+
 import btnTop from "../../assets/images/Contact/btn-top.png";
 import btnBottom from "../../assets/images/Contact/btn-bottom.png";
 import instagram from "../../assets/images/Footer/Icon awesome-instagram.svg";
@@ -17,12 +19,14 @@ import yellowLine from "../../assets/images/About/yellow-line.png";
 import btnPlay from "../../assets/images/About/ButtonPlay.png";
 import icon1 from "../../assets/images/Reason/icon1.png";
 import icon2 from "../../assets/images/Program/icon2.png";
-import video from "../../assets/video/game-video.mp4";
+import video_mp4 from "../../assets/video/game-video.mp4";
+import video_webm from "../../assets/video/game-video.webm";
 
 import './style.css'
 
-
 const About = () => {
+    const [modal, setModal] = useState(false);
+    const video = useRef(null);
 
     return (
         <section className='about' id='about'>
@@ -34,21 +38,19 @@ const About = () => {
                         </h1>
                         <p className="about__text">
                             Освойте разработку игр с нуля и получите всё для
-                            уверенного старта в геймдеве. Вы научитесь писать на <span>С#</span>, работать с <span>Unity</span> и воплощать идеи в собственных
+                            уверенного старта в геймдеве. Вы научитесь писать на <span>С#</span>, работать
+                            с <span>Unity</span> и воплощать идеи в собственных
                             играх.
                         </p>
                         <a href="#contact">
                             <button type='submit'
                                     className="about__btn"
-                                // onClick={() => setModalActive(true)}
                             >
                                 Записаться
                                 <img src={btnTop} alt="btn-top" className='about__btn-top'/>
                                 <img src={btnBottom} alt="btn-bottom" className='about__btn-bottom'/>
                             </button>
                         </a>
-                        {/*<Modal active={modalActive} setActive={setModalActive}>*/}
-                        {/*</Modal>*/}
                     </div>
                 </div>
             </div>
@@ -68,7 +70,8 @@ const About = () => {
                     </a>
                 </li>
                 <li className="about__icon">
-                    <a href="https://www.facebook.com/sky.nomad.academy" className="about__link" target='_blank' rel="noreferrer">
+                    <a href="https://www.facebook.com/sky.nomad.academy" className="about__link" target='_blank'
+                       rel="noreferrer">
                         <img src={facebook} alt="facebook" className='about__facebook'/>
                     </a>
                 </li>
@@ -89,21 +92,36 @@ const About = () => {
                 <img src={img2} alt="" className="about__img-2"/>
                 <img src={img3} alt="" className="about__img-3"/>
                 <div className="about__gallery-block">
+                    {
+                        modal && <Modal active={modal} setActive={setModal}>
+                            <div className="video-wrapper">
+                                <video
+                                    ref={video}
+                                    controls
+                                    autoPlay
+                                    loop
+                                    id="video"
+                                    className="player-wrapper"
+                                    muted
+                                >
 
-                    {/*<video width="400" height="300" controls="controls" poster={btnPlay}>*/}
-                    {/*    <source src={video} type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'> </source>*/}
-                    {/*</video>*/}
+                                    <source src={video_webm} type="video/webm"/>
+                                    <source src={video_mp4} type="video/mp4"/>
 
-                    <a href={video} className='about__gallery-block-link'>
+                                    Ваш браузер не поддерживает встроенные видео :(
+                                </video>
+                            </div>
+                        </Modal>
+                    }
+                    <span className='about__gallery-block-link' onClick={() => setModal(!modal)}>
                         <img src={btnPlay} alt="btnPlay"/>
                         <span className='about__gallery-title'>
                             Галерея <br/> <span>SkyNomadAcademy</span>
                         </span>
-                    </a>
+                    </span>
                 </div>
             </div>
             <img src={leftCircle} className='about__left-circle' alt="about__left-circle"/>
-            {/*<img src={rightCircle} className='about__right-top-circle' alt="about__right-top-circle"/>*/}
             <img src={rightCircle} className='about__right-bottom-circle' alt="about__right-bottom-circle"/>
             <img src={yellowLine} className='about__yellow-line' alt="about__yellow-line"/>
             <img src={icon1} className='about__icon-1' alt="about__icon-1"/>

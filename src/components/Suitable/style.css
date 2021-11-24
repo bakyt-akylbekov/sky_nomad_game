@@ -1,10 +1,10 @@
 .suitable {
     background: url("../../assets/images/Suitable/Back.png") top left/100% 100% no-repeat;
-    height: 700px;
+    height: 880px;
     display: flex;
     align-items: center;
     position: relative;
-    z-index: 1;
+    z-index: -1;
 }
 
 .suitable__item {
@@ -48,6 +48,7 @@
 
 /*images*/
 .suitable__emoji {
+    width: 30%;
     position: absolute;
     top: 25%;
     left: 11%
@@ -100,10 +101,10 @@
     right: 36%;
 }
 .suitable__ellipse{
-    z-index: -1;
+    z-index: -5;
     position: absolute;
     left: -20%;
-    bottom: -115%;
+    bottom: -80%;
 }
 /*images*/
 

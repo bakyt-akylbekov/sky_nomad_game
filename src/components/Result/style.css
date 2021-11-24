@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     position: relative;
-    z-index: 1;
+    z-index: -1;
     overflow: hidden;
     padding-bottom: 50px;
 }
@@ -66,7 +66,7 @@
     position: absolute;
     left: -4%;
     bottom: -17%;
-    z-index: -1;
+    z-index: -5;
 }
 .result__ellipse-2{
     position: absolute;
@@ -78,7 +78,7 @@
     position: absolute;
     right: -4%;
     bottom: -17%;
-    z-index: -1;
+    z-index: -5;
 }
 .result__joystick{
     position: absolute;

@@ -75,6 +75,14 @@
     transition: .6s;
 }
 
+.about__mob-joystick {
+    display: none;
+}
+
+.about__icon-1, .about__icon-2 {
+   display: none;
+}
+
 .about__btn-top {
     position: absolute;
     right: 10px;
@@ -119,11 +127,6 @@
     transition: .7s;
 }
 
-
-
-
-
-
 /*images*/
 .about__joystick {
     position: absolute;
@@ -160,7 +163,8 @@
     color: #FFC400;
 }
 .about__img-1 {
-
+    position: relative;
+    top: -3px;
 }
 
 .about__img-2 {
@@ -172,11 +176,10 @@
 .about__img-3 {
     height: 248px;
     position: relative;
-    top: 20px;
+    top: 19px;
 }
 
 .about__left-circle {
-
     position: absolute;
     left: 3%;
     top: 0;
@@ -200,7 +203,7 @@
 .about__yellow-line {
     position: absolute;
     bottom: 0;
-
+    z-index: -1;
 }
 
 
@@ -222,11 +225,5 @@
     .about__joystick {
         width: 525px;
     }
-}
-
-
-
-@media screen and (max-width: 576px) {
-
 }
 
