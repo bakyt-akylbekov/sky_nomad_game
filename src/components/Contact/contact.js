@@ -12,8 +12,6 @@ import icon3 from '../../assets/images/Contact/icon3.png'
 import icon4 from '../../assets/images/Contact/icon4.png'
 import ellipse1 from '../../assets/images/Contact/ellipse1.png'
 import ellipse2 from '../../assets/images/Contact/ellipse2.png'
-// import leftCircle from '../../assets/images/Contact/left-circle.png'
-// import rightCircle from '../../assets/images/Contact/right-circle.png'
 import redCircle from '../../assets/images/Contact/img.png'
 import logo from "../../assets/images/Header/Logo.png";
 import instagram from "../../assets/images/Footer/Icon awesome-instagram.svg";
@@ -27,29 +25,77 @@ import './style.css'
 const Contact = () => {
     const [email, setEmail] = useState('');
     const [tel, setTel] = useState('');
+    const [resultType, setResultType] = useState(null);
+    const [notification, setNotification] = useState(false);
+
+
     const sendFormHandler = () => {
-        const obj = {
-            email,
-            tel,
+        const params = new URLSearchParams();
+        params.append('email', email);
+        params.append('tel', tel);
+        const config = {
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            }
+        };
+        axios.post('https://send-master.herokuapp.com/send', params, config)
+            .then((result) => {
+                console.log(result);
+                console.log(result.status);
+                if (result.status === 200) {
+                    console.log("Ваша заявка принята!");
+                    setResultType('success');
+                    setNotification(true);
+                    setTimeout(() => {
+                        setNotification(false);
+                    }, 7000)
+                } else {
+                    console.log("Попробуйте ещё раз!");
+                }
+            })
+            .catch((err) => {
+                console.log(err);
+            });
+        setEmail('');
+        setTel('');
+    };
+
+
+    const sendForm = () => {
+        if(email.length === 0 && tel.length === 0){
+            setEmail('Введите почту, пожалуйста!');
+            setTel('Введите номер телефона, пожалуйста!');
+            setTimeout(() => {
+                setEmail('');
+                setTel('')
+            }, 5000)
+        } else {
+            sendFormHandler();
         }
-        axios.post('https://send-master.herokuapp.com/send', obj)
-        console.log(obj)
-    }
+    };
 
     return (
         <section className='contact' id='contact'>
+            {notification &&
+            <div className={resultType === 'success' ? 'contact__success' : 'contact__error'}>
+                {resultType === "success" && <p>Ваша заявка принята!</p>}
+                {resultType !== "success" && <p>Пожалуйста, попробуйте ещё раз!</p>}
+            </div>
+            }
             <h2 className="contact__title">
                 Успейте записаться
             </h2>
             <div className="contact__block">
-                <form action="/send" method="post" className="contact__form" onSubmit={sendFormHandler}>
+                <div className="contact__form">
                     <h4 className="contact__subtitle">Оставьте заявку</h4>
                     <div className="contact__item">
                         <input type="email"
                                className="contact__input"
                                placeholder='example@mail.com'
                                name='email'
+                               value={email}
                                onChange={(e) => setEmail(e.target.value)}
+                               required
                         />
                         <img src={bottomLine} alt="bottomLine" className='contact__bottom-line'/>
                     </div>
@@ -60,18 +106,21 @@ const Contact = () => {
                         <input type="tel"
                                className="contact__input"
                                placeholder='+996 000 000 000'
+                               value={tel}
                                onChange={(e) => setTel(e.target.value)}
+                               required
                         />
                         <img src={bottomLine} alt="bottomLine" className='contact__bottom-line'/>
                     </div>
                     <button type='submit'
-                        // disabled={!formValid}
-                            className="contact__btn">
+                            onClick={sendForm}
+                            className="contact__btn"
+                    >
                         Записаться
                         <img src={btnTop} alt="btn-top" className='contact__btn-top'/>
                         <img src={btnBottom} alt="btn-bottom" className='contact__btn-bottom'/>
                     </button>
-                </form>
+                </div>
             </div>
 
             <div className="container container__contact">
@@ -162,7 +211,8 @@ const Contact = () => {
                                     </a>
                                 </li>
                                 <li className="footer__icon">
-                                    <a href="https://www.facebook.com/sky.nomad.academy" className="footer__link" target='_blank'
+                                    <a href="https://www.facebook.com/sky.nomad.academy" className="footer__link"
+                                       target='_blank'
                                        rel="noreferrer">
                                         <img src={facebook} alt="facebook" className='footer__facebook'/>
                                     </a>
@@ -201,8 +251,6 @@ const Contact = () => {
             <img src={icon1} alt="" className="contact__icon-5"/>
             <img src={ellipse1} alt="" className="contact__ellipse-1"/>
             <img src={ellipse2} alt="" className="contact__ellipse-2"/>
-            {/*<img src={leftCircle} alt="" className="contact__left-circle"/>*/}
-            {/*<img src={rightCircle} alt="" className="contact__right-circle"/>*/}
             <img src={redCircle} alt="" className="contact__red-circle"/>
         </section>
     );

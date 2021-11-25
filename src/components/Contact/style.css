@@ -182,7 +182,48 @@
     transition: .7s;
 }
 
+.contact__success{
+    width: 220px;
+    height: 60px;
+    background-color: greenyellow;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 19px 0;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    animation-name: fadeInRight;
+    animation-duration: .2s;
+    z-index: 200;
+}
 
+.contact__error{
+    width: 220px;
+    height: 60px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 19px 0;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    animation-name: fadeInRight;
+    animation-duration: .2s;
+    z-index: 200;
+}
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
 /*images*/
 
